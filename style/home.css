@@ -1,0 +1,113 @@
+.overlay {
+  background-color: var(--blue);
+  opacity: 1;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 1;
+}
+
+.app {
+  height: 100vh;
+  box-sizing: border-box;
+  position: relative;
+  background-color: var(--blue);
+}
+
+.container {
+  position: absolute;
+  top: 40px;
+  left: 40px;
+  right: 40px;
+  bottom: 80px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.logo {
+  cursor: pointer;
+  position: absolute;
+  width: 120px;
+  z-index: 1;
+}
+
+.dance, .dine {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 36px;
+  font-weight: var(--bold);
+  letter-spacing: 10px;
+  cursor: pointer;
+  -webkit-text-fill-color: transparent;
+}
+
+.dine {
+  background-color: var(--beige);
+  -webkit-text-stroke: 2px var(--blue);
+}
+
+.dine h1 {
+  position: absolute;
+
+}
+
+.dance {
+  background-color: var(--blue);
+  -webkit-text-stroke: 2px var(--beige);
+}
+
+.dance h1 {
+  position: absolute;
+}
+
+.down-arrow {
+  cursor: pointer;
+  background-image: url('https://img.icons8.com/ios/509/FFEFE6/down-filled.png');
+  background-size: cover;
+  width: 40px;
+  height: 40px;
+  position: absolute;
+  bottom: -60px;
+}
+
+.video-container {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+.video {
+  object-fit: cover;
+  width:100%;
+  height:100%;
+  opacity: 0;
+  z-index: 2;
+}
+
+.dance-video, .dine-video {
+  transition: all .2s ease;
+}
+
+.dance:hover .dance-video {
+  opacity: 1;
+}
+
+.dine:hover .dine-video {
+  opacity: 1;
+}
+
+.dance:active .dance-video {
+  transform: scale(1.2);
+  filter: brightness(1.5);
+}
+
+.dine:active .dine-video {
+  transform: scale(1.2);
+  filter: brightness(1.5);
+}

@@ -1,0 +1,20 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: adrianna;
+}
+
+body {
+  background-color: var(--blue);
+}
+
+:root {
+  /* colors */
+  --blue: #010A1E;
+  --beige: #FFEFE6;
+
+  /* fonts */
+  --regular: 400;
+  --medium: 600;
+  --bold: 700;
+}

@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="utf-8">
+    <title>Chin Chin Club</title>
+    <link rel="stylesheet" href="style/vars.css">
+    <link rel="stylesheet" href="style/home.css">
+    <link rel="stylesheet" href="https://use.typekit.net/vhb8lnq.css">
+  </head>
+  <body>
+    <div class="overlay"></div>
+
+    <div class="app">
+
+      <div class="container">
+        <div class="dine">
+          <div class="video-container">
+            <video id="bg-video" loop muted autoplay class="video dine-video">
+                <source src="style/dine.mp4" type="video/mp4">
+            </video>
+          </div>
+          <h1>DINE</h1>
+        </div>
+        <img src="style/logo.png" class="logo">
+        <div class="dance">
+          <div class="video-container">
+            <video id="bg-video" loop muted autoplay class="video dance-video">
+                <source src="style/dance.mp4" type="video/mp4">
+            </video>
+          </div>
+          <h1>DANCE</h1>
+        </div>
+        <div class="down-arrow"></div>
+      </div>
+
+    </div>
+
+    <footer>
+    </footer>
+
+    <script type="text/javascript" src="js/anime.min.js"></script>
+    <script>
+
+      anime({
+        targets: '.dance',
+        translateX: [250, 0],
+        duration: 1500,
+        delay: 300,
+        opacity: [0,100],
+      });
+
+      anime({
+        targets: '.dine',
+        translateX: [-250, 0],
+        duration: 1500,
+        delay: 300,
+        opacity: [0,100],
+      });
+
+      anime({
+        targets: '.dine h1',
+        strokeDashoffset: [anime.setDashoffset, 0],
+        easing: 'easeInOutSine',
+        duration: 1500,
+        delay: function(el, i) { return i * 250 },
+        direction: 'alternate',
+        loop: true
+      });
+
+      anime({
+        targets: '.logo',
+        translateY: [-100, 0],
+        duration: 1200,
+        delay: 450,
+        opacity: [0,100],
+      });
+
+      anime({
+        targets: '.overlay',
+        duration: 1500,
+        delay: 300,
+        opacity: [1,0],
+        complete: function(anim) {
+          document.querySelector('.overlay').style.display = "none";
+        }
+      });
+
+      anime({
+        targets: '.down-arrow',
+        translateY: [-60, 0],
+        duration: 600,
+        delay: 600,
+        opacity: [0,100],
+      });
+
+    </script>
+  </body>
+</html>
