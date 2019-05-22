@@ -9,6 +9,9 @@
     <link rel="stylesheet" href="https://use.typekit.net/vhb8lnq.css">
   </head>
   <body>
+    <div class="overlay">
+
+    </div>
 
     <div class="app">
       <div class="video-container">
@@ -29,6 +32,7 @@
     </footer>
 
     <script src="https://unpkg.com/scrollreveal"></script>
+    <script type="text/javascript" src="js/anime.min.js"></script>
 
     <script>
 
@@ -50,6 +54,15 @@
         duration: 600,
         opacity: [0, 1],
         easing: easeOutQuint,
+      });
+
+      anime({
+        targets: '.overlay',
+        duration: 300,
+        opacity: [1,0],
+        complete: function(anim) {
+          document.querySelector('.overlay').style.display = "none";
+        }
       });
 
     </script>

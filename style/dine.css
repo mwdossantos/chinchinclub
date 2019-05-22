@@ -1,0 +1,14 @@
+.gradient-holder {
+  right: 0;
+  left: unset;
+}
+
+.left-gradient {
+  right: 0;
+  left: unset;
+  transform: rotate(180deg);
+}
+
+.left-gradient h1 {
+  transform: rotate(-90deg);
+}

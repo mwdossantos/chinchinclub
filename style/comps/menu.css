@@ -1,0 +1,41 @@
+.menu a {
+  color: var(--blue);
+  text-decoration: none;
+}
+
+.menu a:hover {
+  -webkit-text-stroke: 1px var(--blue);
+  -webkit-text-fill-color: transparent;
+}
+
+.menu-button img {
+  transition: all .2s ease;
+}
+
+.menu {
+  height: 60px;
+  background-color: var(--beige);
+  position: absolute;
+  top: 0;
+  left: 60px;
+  right: 120px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  opacity: 0;
+  visibility: hidden;
+  transition: all .2s ease;
+}
+
+.menu-link {
+  font-size: 18px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.menu-active {
+  text-decoration: line-through;
+  text-decoration-color: var(--blue);
+  -webkit-text-stroke: 1px var(--blue);
+  -webkit-text-fill-color: transparent;
+}
