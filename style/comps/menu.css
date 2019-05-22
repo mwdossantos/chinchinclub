@@ -1,10 +1,10 @@
 .menu a {
-  color: var(--blue);
+  color: var(--beige);
   text-decoration: none;
 }
 
 .menu a:hover {
-  -webkit-text-stroke: 1px var(--blue);
+  -webkit-text-stroke: 1px var(--beige);
   -webkit-text-fill-color: transparent;
 }
 
@@ -14,7 +14,7 @@
 
 .menu {
   height: 60px;
-  background-color: var(--beige);
+  background-color: var(--blue);
   position: absolute;
   top: 0;
   left: 60px;

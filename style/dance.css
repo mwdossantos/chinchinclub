@@ -15,7 +15,7 @@
 
 .right-border {
   width: 20px;
-  background-color: var(--beige);
+  background-color: var(--blue);
   height: 100%;
   position: absolute;
   right: 0;
@@ -25,7 +25,7 @@
 
 .top-border {
   height: 20px;
-  background-color: var(--beige);
+  background-color: var(--blue);
   position: absolute;
   top: 0;
   left: 60px;
@@ -80,17 +80,17 @@
   left: 0;
   width: 60px;
   height: 60px;
-  background-color: var(--beige);
+  background-color: var(--blue);
   transition: all .2s ease;
   cursor: pointer;
 }
 
 .left-top:hover {
-  opacity: 0.9;
+  filter: brightness(1.5);
 }
 
 .left-top:active {
-  opacity: 0.8;
+  filter: brightness(0.8);
 }
 
 .left-top img {
@@ -109,18 +109,17 @@
   width: 60px;
   height: 60px;
   padding: 30px;
-  background-color: var(--beige);
+  background-color: var(--blue);
   transition: all .2s ease;
   cursor: pointer;
 }
 
 .right-top:hover {
-  background-color: var(--blue);
-  opacity: 1;
+  filter: brightness(1.5);
 }
 
 .right-top:active {
-  background-color: var(--blue);
+  filter: brightness(0.8);
 }
 
 .right-top img {
