@@ -19,7 +19,7 @@
   height: 100%;
   position: absolute;
   right: 0;
-  top: 100px;
+  top: 120px;
   bottom: 0;
 }
 
@@ -29,7 +29,7 @@
   position: absolute;
   top: 0;
   left: 60px;
-  right: 100px;
+  right: 120px;
 }
 
 .left-gradient {
@@ -72,8 +72,8 @@
 }
 
 .left-top img {
-  width: 40px;
-  height: 40px;
+  width: 30px;
+  height: 30px;
 }
 
 .right-top {
@@ -86,7 +86,7 @@
   right: 0;
   width: 60px;
   height: 60px;
-  padding: 20px;
+  padding: 30px;
   background-color: var(--beige);
   transition: all .2s ease;
   cursor: pointer;
@@ -103,4 +103,29 @@
 
 .right-top img {
   width: 100%;
+}
+
+.menu-button img {
+  transition: all .2s ease;
+}
+
+.menu {
+  height: 60px;
+  background-color: var(--beige);
+  position: absolute;
+  top: 0;
+  left: 60px;
+  right: 120px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  opacity: 0;
+  visibility: hidden;
+  transition: all .2s ease;
+}
+
+.menu-link {
+  font-size: 18px;
+  font-weight: 700;
+  text-transform: uppercase;
 }
