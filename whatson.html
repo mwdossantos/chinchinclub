@@ -17,6 +17,28 @@
   <body>
     <div class="overlay"></div>
 
+    <div class="eventItem">
+      <div class="ei-left">
+        <div class="date">
+          Tuesday <br>
+          05/05
+        </div>
+        <p>HIPHOP / R&B / HITJES</p>
+        <p>PRE-SALE: € 10 / DOOR-SALE: € 15</p>
+        <h1>Friday freshness</h1>
+        <p>MIMI, de hotspot op de donderdagavond in Chin Chin Club! verwacht geheimzinnigheid en gezelligheid in combinatie met de leukste mensen uit Amsterdam en omstreken. <br><br> MIMI wacht op jou.</p>
+      </div>
+      <div class="ei-right">
+        <img class="close-button" src="https://img.icons8.com/ios/480/010A1E/delete-sign-filled.png">
+        <div class="buttons">
+          <button type="button" name="button">FACEBOOK</button>
+          <div class="divider"></div>
+          <button type="button" name="button">TICKETS</button>
+        </div>
+      </div>
+
+    </div>
+
     <div class="app">
 
       <div class="container">
@@ -30,109 +52,6 @@
                 05/05
               </div>
               <h1>Friday freshness</h1>
-              <div class="buttons">
-                <button type="button" name="button">Facebook</button>
-                <div class="divider"></div>
-                <button type="button" name="button">Tickets</button>
-              </div>
-            </div>
-          </div>
-          <div class="tonight-container">
-            <div class="ticket-holder">
-              <div class="date">
-                Tuesday <br>
-                05/05
-              </div>
-              <h1>Friday freshness</h1>
-              <div class="buttons">
-                <button type="button" name="button">Facebook</button>
-                <div class="divider"></div>
-                <button type="button" name="button">Tickets</button>
-              </div>
-            </div>
-          </div>
-          <div class="tonight-container">
-            <div class="ticket-holder">
-              <div class="date">
-                Tuesday <br>
-                05/05
-              </div>
-              <h1>Friday freshness</h1>
-              <div class="buttons">
-                <button type="button" name="button">Facebook</button>
-                <div class="divider"></div>
-                <button type="button" name="button">Tickets</button>
-              </div>
-            </div>
-          </div>
-          <div class="tonight-container">
-            <div class="ticket-holder">
-              <div class="date">
-                Tuesday <br>
-                05/05
-              </div>
-              <h1>Friday freshness</h1>
-              <div class="buttons">
-                <button type="button" name="button">Facebook</button>
-                <div class="divider"></div>
-                <button type="button" name="button">Tickets</button>
-              </div>
-            </div>
-          </div>
-          <div class="tonight-container">
-            <div class="ticket-holder">
-              <div class="date">
-                Tuesday <br>
-                05/05
-              </div>
-              <h1>Friday freshness</h1>
-              <div class="buttons">
-                <button type="button" name="button">Facebook</button>
-                <div class="divider"></div>
-                <button type="button" name="button">Tickets</button>
-              </div>
-            </div>
-          </div>
-          <div class="tonight-container">
-            <div class="ticket-holder">
-              <div class="date">
-                Tuesday <br>
-                05/05
-              </div>
-              <h1>Friday freshness</h1>
-              <div class="buttons">
-                <button type="button" name="button">Facebook</button>
-                <div class="divider"></div>
-                <button type="button" name="button">Tickets</button>
-              </div>
-            </div>
-          </div>
-          <div class="tonight-container">
-            <div class="ticket-holder">
-              <div class="date">
-                Tuesday <br>
-                05/05
-              </div>
-              <h1>Friday freshness</h1>
-              <div class="buttons">
-                <button type="button" name="button">Facebook</button>
-                <div class="divider"></div>
-                <button type="button" name="button">Tickets</button>
-              </div>
-            </div>
-          </div>
-          <div class="tonight-container">
-            <div class="ticket-holder">
-              <div class="date">
-                Tuesday <br>
-                05/05
-              </div>
-              <h1>Friday freshness</h1>
-              <div class="buttons">
-                <button type="button" name="button">Facebook</button>
-                <div class="divider"></div>
-                <button type="button" name="button">Tickets</button>
-              </div>
             </div>
           </div>
         </div>
@@ -216,6 +135,35 @@
 
       var easeOutQuint = "cubic-bezier(0.23, 1, 0.32, 1)";
 
+      // open event popup
+      var eventItem = document.querySelector(".tonight-container");
+      var closeButton = document.querySelector(".close-button");
+
+      var eventItemPopup = document.querySelector(".eventItem");
+
+      // open
+      eventItem.onclick = function() {
+
+        anime({
+          targets: eventItemPopup,
+          translateY: -20,
+          duration: 1000,
+          opacity: [0,1],
+        });
+
+      }
+
+      // close
+      closeButton.onclick = function() {
+
+        anime({
+          targets: eventItemPopup,
+          translateY: 20,
+          duration: 1000,
+          opacity: [1,0],
+        });
+
+      }
       // reveal and collapse the menu
       var menuButton = document.querySelector(".menu-button");
 
@@ -257,7 +205,7 @@
         distance: "20px",
         easing: easeOutQuint,
         opacity: [0, 1],
-        container: ".center-piece", 
+        container: ".center-piece",
       });
 
       ScrollReveal().reveal('.left-gradient h1', {

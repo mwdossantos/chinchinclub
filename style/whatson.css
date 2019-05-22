@@ -12,12 +12,7 @@
 
 .tonight-container {
   margin: 0px 0px 20px 0px;
-}
-
-.buttons {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+  transition: all .2s ease;
 }
 
 .center-piece {
@@ -27,6 +22,66 @@
 
 .ticket-holder h1 {
   font-size: 24px;
-  margin:0px 20px;
+  margin: 0px;
+  text-align: right;
+}
 
+.tonight-container:hover {
+  cursor: pointer;
+  filter: brightness(1.2);
+}
+
+.tonight-container:active {
+  cursor: pointer;
+  filter: brightness(0.8);
+}
+
+.eventItem {
+  opacity: 0;
+  bottom: 0px;
+  right: 20px;
+  left: 20px;
+  position: fixed;
+  z-index: 4;
+  padding: 20px;
+  background-color: var(--beige);
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+
+.ei-left h1 {
+  text-transform: uppercase;
+}
+
+.ei-right img {
+  width: 40px;
+  height: 40px;
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  cursor: pointer;
+  transition: all .2s ease;
+}
+
+.ei-right img:hover {
+  filter: brightness(1.2);
+}
+
+.ei-right img:active {
+  filter: brightness(1);
+}
+
+
+.ei-right {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: flex-end;
+}
+
+.buttons {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
