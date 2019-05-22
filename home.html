@@ -6,6 +6,7 @@
     <title>Chin Chin Club</title>
     <link rel="stylesheet" href="style/vars.css">
     <link rel="stylesheet" href="style/home.css">
+    <link rel="stylesheet" href="style/comps/footer.css">
     <link rel="stylesheet" href="https://use.typekit.net/vhb8lnq.css">
   </head>
   <body>
@@ -14,6 +15,7 @@
     <div class="app">
 
       <div class="container">
+
         <div class="dine">
           <div class="video-container">
             <video id="bg-video" loop muted autoplay class="video dine-video">
@@ -22,7 +24,9 @@
           </div>
           <h1>DINE</h1>
         </div>
+
         <img src="style/logo.png" class="logo">
+
         <div class="dance">
           <div class="video-container">
             <video id="bg-video" loop muted autoplay class="video dance-video">
@@ -31,49 +35,81 @@
           </div>
           <h1>DANCE</h1>
         </div>
-        <div class="down-arrow"></div>
       </div>
 
     </div>
 
-    <footer>
+    <footer class="footer">
+
+      <div class="footer-container">
+        <img src="style/logo.png" alt="logo" class="footer-logo">
+        <div class="mailbox">
+          <div class="input-container">
+            <input type="email" name="subscribe" class="input">
+            <button type="button" name="button">SUBSCRIBE</button>
+          </div>
+
+          <div class="adress-box">
+            <div class="a-left">
+              <p>Rozengracht 133<br>
+                1016 LV Amsterdam
+              </p>
+            </div>
+            <div class="divider"></div>
+            <div class="a-right">
+              <p><a href="mailto:info@chinchinclub.nl">info@chinchinclub.nl</a><br>
+                <a href="tel:0202618325">020 26 18 32 5</a>
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="footer-nav">
+          <div class="nav-left">
+            <a href="#">House Policy</a>
+            <a href="#">Door Policy</a>
+            <a href="#">Privacy Policy</a>
+          </div>
+          <div class="divider"></div>
+          <div class="nav-right">
+            <a href="#">Lost & Found</a>
+            <a href="#">Jobs</a>
+            <a href="#">Press</a>
+          </div>
+        </div>
+      </div>
+
     </footer>
 
+    <script src="https://unpkg.com/scrollreveal"></script>
     <script type="text/javascript" src="js/anime.min.js"></script>
     <script>
 
-      anime({
-        targets: '.dance',
-        translateX: [250, 0],
-        duration: 1500,
+      var easeOutQuint = "cubic-bezier(0.23, 1, 0.32, 1)";
+
+      ScrollReveal().reveal('.footer', {
+        origin: "bottom",
+        distance: "100px",
+      });
+      ScrollReveal().reveal('.dance', {
+        origin: "right",
+        distance: "250px",
         delay: 300,
-        opacity: [0,100],
+        easing: easeOutQuint,
+        opacity: [0, 1],
       });
-
-      anime({
-        targets: '.dine',
-        translateX: [-250, 0],
-        duration: 1500,
+      ScrollReveal().reveal('.dine', {
+        origin: "left",
+        distance: "250px",
         delay: 300,
-        opacity: [0,100],
+        easing: easeOutQuint,
+        opacity: [0, 1],
       });
-
-      anime({
-        targets: '.dine h1',
-        strokeDashoffset: [anime.setDashoffset, 0],
-        easing: 'easeInOutSine',
-        duration: 1500,
-        delay: function(el, i) { return i * 250 },
-        direction: 'alternate',
-        loop: true
-      });
-
-      anime({
-        targets: '.logo',
-        translateY: [-100, 0],
-        duration: 1200,
+      ScrollReveal().reveal('.logo', {
+        origin: "bottom",
+        distance: "50px",
         delay: 450,
-        opacity: [0,100],
+        opacity: [0, 1],
+        easing: easeOutQuint,
       });
 
       anime({
@@ -84,14 +120,6 @@
         complete: function(anim) {
           document.querySelector('.overlay').style.display = "none";
         }
-      });
-
-      anime({
-        targets: '.down-arrow',
-        translateY: [-60, 0],
-        duration: 600,
-        delay: 600,
-        opacity: [0,100],
       });
 
     </script>

@@ -21,7 +21,7 @@
   top: 40px;
   left: 40px;
   right: 40px;
-  bottom: 80px;
+  bottom: 40px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -54,7 +54,6 @@
 
 .dine h1 {
   position: absolute;
-
 }
 
 .dance {
@@ -64,16 +63,6 @@
 
 .dance h1 {
   position: absolute;
-}
-
-.down-arrow {
-  cursor: pointer;
-  background-image: url('https://img.icons8.com/ios/509/FFEFE6/down-filled.png');
-  background-size: cover;
-  width: 40px;
-  height: 40px;
-  position: absolute;
-  bottom: -60px;
 }
 
 .video-container {

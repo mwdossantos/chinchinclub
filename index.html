@@ -16,31 +16,42 @@
             <source src="style/opening-video.mp4" type="video/mp4">
         </video>
       </div>
+
       <img src="style/logo.png" class="logo">
+
       <a href="home.html">
         <div class="button">GA DOOR <img src="https://img.icons8.com/ios/500/ffffff/right-filled.png"/></div>
       </a>
+
     </div>
 
     <footer>
     </footer>
 
-    <script type="text/javascript" src="js/anime.min.js"></script>
+    <script src="https://unpkg.com/scrollreveal"></script>
+
     <script>
-      anime({
-        targets: '.logo',
-        translateX: [-100, 0],
+
+      var easeOutQuint = "cubic-bezier(0.23, 1, 0.32, 1)";
+
+      ScrollReveal().reveal('.logo', {
+        origin: "left",
+        distance: "100px",
+        delay: 600,
         duration: 600,
-        delay: 1000,
-        opacity: [0,100],
+        opacity: [0, 1],
+        easing: easeOutQuint,
       });
-      anime({
-        targets: '.button',
-        translateY: [100, 0],
+
+      ScrollReveal().reveal('.button', {
+        origin: "top",
+        distance: "100px",
+        delay: 600,
         duration: 600,
-        delay: 1000,
-        opacity: [0,100],
+        opacity: [0, 1],
+        easing: easeOutQuint,
       });
+
     </script>
   </body>
 </html>
