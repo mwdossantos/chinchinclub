@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="utf-8">
+    <title>Chin Chin Club</title>
+    <link rel="stylesheet" href="style/vars.css">
+    <link rel="stylesheet" href="style/home.css">
+    <link rel="stylesheet" href="style/dance.css">
+
+    <link rel="stylesheet" href="style/comps/footer.css">
+    <link rel="stylesheet" href="https://use.typekit.net/vhb8lnq.css">
+  </head>
+  <body>
+    <div class="overlay"></div>
+
+    <div class="app">
+
+      <div class="container">
+        <img class="dance-bg" src="style/dance-bg.jpg">
+        <div class="top-border"></div>
+        <div class="right-border"></div>
+        <div class="left-top">
+          <img src="https://img.icons8.com/material/480/010A1E/plus-math.png" class="menu-button">
+        </div>
+        <div class="left-gradient">
+          <h1>DINE</h1>
+        </div>
+
+
+      </div>
+
+    </div>
+
+    <footer class="footer">
+
+      <div class="footer-container">
+        <img src="style/logo.png" alt="logo" class="footer-logo">
+        <div class="mailbox">
+          <div>
+            <form class="input-container" action="#" method="post">
+              <input type="email" name="subscribe" required class="input">
+              <button type="submit" name="button">SUBSCRIBE</button>
+            </form>
+
+          </div>
+
+          <div class="adress-box">
+            <div class="a-left">
+              <p>Rozengracht 133<br>
+                1016 LV Amsterdam
+              </p>
+            </div>
+            <div class="divider"></div>
+            <div class="a-right">
+              <p><a href="mailto:info@chinchinclub.nl">info@chinchinclub.nl</a><br>
+                <a href="tel:0202618325">020 26 18 32 5</a>
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="footer-nav">
+          <div class="nav-left">
+            <a href="#">House Policy</a>
+            <a href="#">Door Policy</a>
+            <a href="#">Privacy Policy</a>
+          </div>
+          <div class="divider"></div>
+          <div class="nav-right">
+            <a href="#">Lost & Found</a>
+            <a href="#">Jobs</a>
+            <a href="#">Press</a>
+          </div>
+        </div>
+      </div>
+
+    </footer>
+
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <script type="text/javascript" src="js/anime.min.js"></script>
+    <script>
+
+      var easeOutQuint = "cubic-bezier(0.23, 1, 0.32, 1)";
+
+      ScrollReveal().reveal('.footer', {
+        origin: "bottom",
+        distance: "100px",
+      });
+      ScrollReveal().reveal('.left-gradient h1', {
+        delay: 600,
+        origin: "top",
+        distance: "20px",
+        easing: easeOutQuint,
+        opacity: [0, 1],
+      });
+
+      ScrollReveal().reveal('.container', {
+        delay: 300,
+        origin: "left",
+        distance: "200px",
+        easing: easeOutQuint,
+        opacity: [0, 1],
+      });
+
+      anime({
+        targets: '.overlay',
+        duration: 1500,
+        delay: 300,
+        opacity: [1,0],
+        complete: function(anim) {
+          document.querySelector('.overlay').style.display = "none";
+        }
+      });
+
+    </script>
+  </body>
+</html>

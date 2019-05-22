@@ -16,25 +16,32 @@
 
       <div class="container">
 
-        <div class="dine">
-          <div class="video-container">
-            <video id="bg-video" loop muted autoplay class="video dine-video">
-                <source src="style/dine.mp4" type="video/mp4">
-            </video>
+        <a class="dd-a" href="dine.html">
+          <div class="dine">
+            <div class="video-container">
+              <video id="bg-video" loop muted autoplay class="video dine-video">
+                  <source src="style/dine.mp4" type="video/mp4">
+              </video>
+            </div>
+            <h1>DINE</h1>
           </div>
-          <h1>DINE</h1>
-        </div>
+        </a>
+
 
         <img src="style/logo.png" class="logo">
 
-        <div class="dance">
-          <div class="video-container">
-            <video id="bg-video" loop muted autoplay class="video dance-video">
-                <source src="style/dance.mp4" type="video/mp4">
-            </video>
+        <a class="dd-a" href="dance.html">
+          <div class="dance">
+            <div class="video-container">
+              <video id="bg-video" loop muted autoplay class="video dance-video">
+                  <source src="style/dance.mp4" type="video/mp4">
+              </video>
+            </div>
+            <h1>DANCE</h1>
           </div>
-          <h1>DANCE</h1>
-        </div>
+        </a>
+
+
       </div>
 
     </div>
@@ -44,9 +51,12 @@
       <div class="footer-container">
         <img src="style/logo.png" alt="logo" class="footer-logo">
         <div class="mailbox">
-          <div class="input-container">
-            <input type="email" name="subscribe" class="input">
-            <button type="button" name="button">SUBSCRIBE</button>
+          <div>
+            <form class="input-container" action="#" method="post">
+              <input type="email" name="subscribe" required class="input">
+              <button type="submit" name="button">SUBSCRIBE</button>
+            </form>
+
           </div>
 
           <div class="adress-box">
