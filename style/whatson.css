@@ -1,0 +1,32 @@
+.active-link {
+  text-decoration: line-through!important;
+  -webkit-text-fill-color: transparent;
+  -webkit-text-stroke: 1px var(--beige);
+}
+
+.ticket-holder {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.tonight-container {
+  margin: 0px 0px 20px 0px;
+}
+
+.buttons {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.center-piece {
+  height: 100%;
+  overflow: auto;
+}
+
+.ticket-holder h1 {
+  font-size: 24px;
+  margin:0px 20px;
+
+}

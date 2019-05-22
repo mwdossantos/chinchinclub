@@ -10,7 +10,9 @@
 
     <link rel="stylesheet" href="style/comps/footer.css">
     <link rel="stylesheet" href="style/comps/menu.css">
+    <link rel="stylesheet" href="style/comps/glide.css">
     <link rel="stylesheet" href="https://use.typekit.net/vhb8lnq.css">
+    <link rel="stylesheet" href="style/glide.core.min.css">
   </head>
   <body>
     <div class="overlay"></div>
@@ -18,7 +20,18 @@
     <div class="app">
 
       <div class="container">
-        <img class="dance-bg" src="style/dance-bg.jpg">
+        <div class="glide">
+          <div class="glide__track" data-glide-el="track">
+            <ul class="glide__slides">
+              <li class="glide__slide"><img class="dance-bg" src="style/dance-bg-1.jpg"></li>
+              <li class="glide__slide"><img class="dance-bg" src="style/dance-bg-2.jpg"></li>
+              <li class="glide__slide"><img class="dance-bg" src="style/dance-bg-3.jpg"></li>
+              <li class="glide__slide"><img class="dance-bg" src="style/dance-bg-4.jpg"></li>
+              <li class="glide__slide"><img class="dance-bg" src="style/dance-bg-5.jpg"></li>
+              <li class="glide__slide"><img class="dance-bg" src="style/dance-bg-6.jpg"></li>
+            </ul>
+          </div>
+        </div>
 
         <div class="center-piece">
           <h1>DANCE</h1>
@@ -39,7 +52,8 @@
         </div>
 
         <div class="menu hidden">
-          <a href="#" class="menu-link">What's On</a>
+          <a href="dance.html" class="menu-link active-link">Dance</a>
+          <a href="whatson.html" class="menu-link">What's On</a>
           <a href="#" class="menu-link">About</a>
           <a href="#" class="menu-link">Kitty Club</a>
         </div>
@@ -102,9 +116,22 @@
 
     </footer>
 
+    <script type="text/javascript" src="js/glide.min.js"></script>
     <script src="https://unpkg.com/scrollreveal"></script>
     <script type="text/javascript" src="js/anime.min.js"></script>
     <script>
+
+      var easeOutQuint = "cubic-bezier(0.23, 1, 0.32, 1)";
+
+      var glide = new Glide('.glide', {
+        type: 'carousel',
+        autoplay: 5000,
+        animationDuration: 1200,
+        animationTimingFunc: easeOutQuint,
+        hoverpause: false,
+      });
+
+      glide.mount()
 
       // reveal and collapse the menu
       var menuButton = document.querySelector(".menu-button");
@@ -126,8 +153,6 @@
         }
 
       };
-
-      var easeOutQuint = "cubic-bezier(0.23, 1, 0.32, 1)";
 
       ScrollReveal().reveal('.footer', {
         origin: "bottom",

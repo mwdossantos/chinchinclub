@@ -115,7 +115,7 @@
 }
 
 .right-top:hover {
-  filter: brightness(1.5);
+  background-color: var(--beige);
 }
 
 .right-top:active {
@@ -166,4 +166,10 @@
 
 .tickets-button {
   margin: 20px auto 0px auto;
+}
+
+.active-link {
+  text-decoration: line-through!important;
+  -webkit-text-fill-color: transparent;
+  -webkit-text-stroke: 1px var(--beige);
 }

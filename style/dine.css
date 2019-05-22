@@ -14,6 +14,10 @@
   background-color: var(--beige);
 }
 
+.right-top:hover {
+  background-color: var(--blue);
+}
+
 .right-border {
   background-color: var(--blue);
 }
@@ -54,4 +58,10 @@
 
 .secondary-button:active {
   filter: brightness(0.8);
+}
+
+.active-link {
+  text-decoration: line-through!important;
+  -webkit-text-fill-color: transparent;
+  -webkit-text-stroke: 1px var(--blue);
 }
