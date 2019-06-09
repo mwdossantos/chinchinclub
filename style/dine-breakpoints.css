@@ -1,8 +1,13 @@
 @media only screen
   and (min-width: 320px)
-  and (max-width: 1024px) {
+  and (max-width: 600px) {
 
     /* iPhone's and devices leading up to the iPad */
 
+    .menu {
+      flex-direction: column;
+      height: 100px;
+      align-items: flex-start;
+    }
 
 }
