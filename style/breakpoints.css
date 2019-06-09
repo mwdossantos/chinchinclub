@@ -1,0 +1,47 @@
+@media only screen
+  and (min-width: 320px)
+  and (max-width: 1024px) {
+
+    /* iPhone's and devices leading up to the iPad */
+
+    .container {
+      flex-direction: column;
+      position: inherit;
+      top: inherit;
+      left: inherit;
+      right: inherit;
+      bottom: inherit;
+      height: 100%;
+    }
+
+    .dance, .dine {
+      height: 50vh;
+    }
+
+    .footer-container {
+      flex-direction: column;
+    }
+
+    .footer-nav {
+      flex-direction: column;
+    }
+
+    .nav-right {
+      margin-top: 20px;
+    }
+    
+    .mailbox {
+      margin: 20px 0px;
+    }
+
+    .adress-box {
+      text-align: center;
+      flex-direction: column;
+      margin-top: 20px;
+    }
+
+    .footer-nav {
+      text-align: center;
+    }
+
+  }
