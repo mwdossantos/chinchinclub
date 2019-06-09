@@ -1,0 +1,21 @@
+@media only screen
+  and (min-width: 320px)
+  and (max-width: 1024px) {
+
+    /* iPhone's and devices leading up to the iPad */
+
+    .container {
+      flex-direction: column;
+      position: inherit;
+      top: inherit;
+      left: inherit;
+      right: inherit;
+      bottom: inherit;
+      height: 100%;
+    }
+
+    .dance, .dine {
+      height: 50vh;
+    }
+
+}
