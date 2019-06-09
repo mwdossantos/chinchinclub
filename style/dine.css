@@ -1,3 +1,7 @@
+.dance-mobile-btn h1 {
+  display: none;
+}
+
 .gradient-holder {
   right: 0;
   left: unset;

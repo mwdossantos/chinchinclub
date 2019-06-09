@@ -8,7 +8,7 @@
       flex-direction: column;
       height: 100px;
       align-items: center;
-      padding: 10px 0px 10px 0px;
+      padding: 30px 0px;
       /* aanpassen zodat de padding hide als het menu dicht geklapt is */
     }
 
@@ -16,17 +16,21 @@
       display: none;
     }
 
-    /* De hele container is on click naar dine. aanpassen naar alleen op de tekst de click to link maken. */
-    .left-gradient {
-      transform: rotate(90deg);
-      background-size: 0 0;
-      margin-top: 215px;
-      /* ik probeer een 20% margin-bottom te doen maar hij reageert alleen op px */
+    .gradient-holder {
+      display: none;
     }
 
-    .gradient-holder {
-      right: 42%;
-      /* Dit is waarschijnlijk niet de goede manier om te centeren. Op Iphone klopt het wel. */
+    a {
+      text-decoration: none;
+    }
+
+    .dance-mobile-btn h1 {
+      display: block;
+      margin-top: 20px;
+      font-size: 32px;
+      letter-spacing: 2px;
+      -webkit-text-stroke: 0px;
+      -webkit-text-fill-color: var(--beige);
     }
 
     .tonight-container {
