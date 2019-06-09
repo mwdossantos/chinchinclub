@@ -30,4 +30,12 @@
       text-align: center;
     }
 
+    .input {
+      border-radius: 0px!important;
+    }
+
+    .left-top:hover {
+      filter: brightness(1);
+    }
+
   }
