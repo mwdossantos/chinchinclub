@@ -12,10 +12,15 @@
       /* aanpassen zodat de padding hide als het menu dicht geklapt is */
     }
 
+    .right-border {
+      display: none;
+    }
+
     .left-gradient {
       transform: rotate(90deg);
       background-size: 0 0;
-      margin-top: 230px;
+      margin-top: 215px;
+      /* ik probeer een 20% margin-bottom te doen maar hij reageert alleen op px */
     }
 
     .gradient-holder {
