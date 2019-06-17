@@ -46,3 +46,53 @@
       text-align: center;
     }
 }
+
+/* dance breakpoints */
+@media only screen
+  and (min-width: 320px)
+  and (max-width: 1024px) {
+
+    /* iPhone's and devices leading up to the iPad */
+
+    .menu {
+      flex-direction: column;
+      height: 100px;
+      align-items: center;
+      padding: 30px 0px;
+      /* aanpassen zodat de padding hide als het menu dicht geklapt is */
+    }
+
+    .right-border {
+      display: none;
+    }
+
+    .gradient-holder {
+      display: none;
+    }
+
+    a {
+      text-decoration: none;
+    }
+
+    .dance-mobile-btn h1 {
+      display: block;
+      margin-top: 20px;
+      font-size: 32px;
+      letter-spacing: 2px;
+      -webkit-text-stroke: 0px;
+      -webkit-text-fill-color: var(--beige);
+    }
+
+    .tonight-container {
+      max-width: 80%;
+      margin: auto;
+    }
+
+    .tonight-container h1 {
+      font-size: 24px;
+    }
+
+    .center-piece  {
+      text-align: center;
+    }
+}
